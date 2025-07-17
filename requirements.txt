@@ -1,0 +1,5 @@
+PyPDF2
+stix2
+pyyaml
+requests
+openai
