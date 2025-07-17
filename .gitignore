@@ -1,0 +1,4 @@
+config/config.yaml
+output/
+venv/
+__pycache__/
