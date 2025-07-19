@@ -1,4 +1,19 @@
-config/config.yaml
-output/
+# Ignore the virtual environment
 venv/
+
+# Ignore API keys and secrets
+config/config.yaml
+
+# Ignore typical Python artifacts
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Ignore environment files
+.env
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db

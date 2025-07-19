@@ -9,6 +9,14 @@ with open('config/config.yaml') as f:
 
 client = OpenAI(api_key=config['openai_api_key'])
 
+
+def escape_backslashes_in_dict(data):
+    for key, items in data.items():
+        if isinstance(items, list):
+            data[key] = [item.replace("\\", "\\\\") if isinstance(item, str) else item for item in items]
+    return data
+
+
 def extract_iocs_with_llm(text):
     prompt = f"""
 Extract all the following Indicators of Compromise (IOCs) from this text. Return JSON structured like this:
@@ -46,8 +54,14 @@ Text:
         ioc_json = re.sub(r"```json\s*", "", ioc_json)
         ioc_json = re.sub(r"```", "", ioc_json).strip()
 
-    # Debug: Show cleaned output before loading
-    print("[DEBUG] Cleaned LLM output:\n", ioc_json)
-
     # Convert cleaned string to JSON object
-    return json.loads(ioc_json)
+    iocs = json.loads(ioc_json)
+
+    # Escape backslashes for JSON compliance
+    iocs = escape_backslashes_in_dict(iocs)
+
+    # Save to output file
+    with open('../output/iocs_output.json', 'w') as f:
+        json.dump(iocs, f, indent=4)
+
+    return iocs
