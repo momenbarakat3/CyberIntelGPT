@@ -47,14 +47,14 @@ The provided CTI report used for this demo:
 - [Official Report Reference (U.S. DoD & CISA)](https://www.cisa.gov/sites/default/files/2023-09/CSA_Russian-GRU-Targeting-Logistics-Sectors.pdf)
 
 ---
+## 📂 Project Structure
 
-## 🔧 Project Structure
-
+```plaintext
 CyberIntelGPT/
-├── assets/                           # Assets for diagrams & output screenshots
+├── assets/                             # Assets for diagrams & output screenshots
 ├── input/
 │   └── CSA_RUSSIAN_GRU_TARGET_LOGISTICS.pdf   # Input CTI PDF Report
-├── output/                            # Output files (examples below)
+├── output/                             # Output files (examples below)
 │   ├── enriched_iocs_with_virustotal.json      # Meaningful enriched output
 │   ├── enriched_iocs_virustotal_stix.json      # Meaningful enriched output
 │   ├── enriched_iocs_with_xforce.json          # Placeholder for demo (limited freemium enrichment)
