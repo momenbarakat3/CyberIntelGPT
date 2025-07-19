@@ -47,34 +47,10 @@ The provided CTI report used for this demo:
 - [Official Report Reference (U.S. DoD & CISA)](https://www.cisa.gov/sites/default/files/2023-09/CSA_Russian-GRU-Targeting-Logistics-Sectors.pdf)
 
 ---
-## 📂 Project Structure
-
-```plaintext
-CyberIntelGPT/
-├── assets/                             # Assets for diagrams & output screenshots
-├── input/
-│   └── CSA_RUSSIAN_GRU_TARGET_LOGISTICS.pdf   # Input CTI PDF Report
-├── output/                             # Output files (examples below)
-│   ├── enriched_iocs_with_virustotal.json      # Meaningful enriched output
-│   ├── enriched_iocs_virustotal_stix.json      # Meaningful enriched output
-│   ├── enriched_iocs_with_xforce.json          # Placeholder for demo (limited freemium enrichment)
-│   ├── enriched_iocs_xforce_stix.json          # Placeholder for demo (limited freemium enrichment)
-│   ├── flattened_iocs_for_splunk.csv           # CSV for SIEM ingestion
-│   └── iocs_output.json                        # Intermediate result
-├── src/                                # Core source files
-│   ├── main.py
-│   ├── enrich_with_virustotal.py
-│   ├── enrich_with_xforce.py
-│   ├── flatten_iocs_virustotal.py
-│   ├── ioc_extractor.py
-│   ├── pdf_parser.py
-│   ├── stix_converter_virustotal.py
-│   └── stix_converter_xforce.py
-└── README.md
 
 ---
 
-##  Pipeline Visualization
+## 📊 Pipeline Visualization
 
 ![Pipeline Diagram](assets/pipeline_diagram.png)
 
@@ -96,26 +72,26 @@ CyberIntelGPT/
 
 ---
 
-## 🔥 Key Outputs Examples (Demo Screenshots)
+## 🔥 Key Output Examples (Demo Screenshots)
 
 ### 📄 CSV Output Example for SIEM:
-![CSV Output](assets/output_csv_example.PNG)
+![CSV Output](assets/output_csv_example.png)
 
 ### 📑 JSON Enriched Output (VirusTotal):
-![JSON Output](assets/output_json_example.PNG)
+![JSON Output](assets/output_json_example.png)
 
 ### 🗂️ STIX JSON Enriched Output (VirusTotal):
-![STIX JSON Output](assets/output_stix_json_example.PNG)
+![STIX JSON Output](assets/output_stix_json_example.png)
 
 ### 🖥️ Terminal Execution Example:
-![Terminal Success](assets/terminal_success_example.PNG)
+![Terminal Success](assets/terminal_success_example.png)
 
 ---
 
 ## 💬 Important Notes
 - **X-Force outputs are placeholders for demo only**. Limited enrichment due to freemium API.
 - **VirusTotal outputs are meaningful and demonstrate the enrichment phase.**
-- All API keys used are **free tier** except OpenAI, which requires $1-2 in credit.
+- All API keys used are **free tier** except OpenAI, which requires **$1-2 credit**.
 
 ---
 
@@ -123,14 +99,15 @@ CyberIntelGPT/
 
 ### Prerequisites:
 - Python 3.x environment
-- Activate your virtual environment:
+
+### Activate your virtual environment:
 ```bash
 # Windows
-.env\Scriptsctivate
+.\venv\Scripts\activate
 
 # Linux/MacOS
 source venv/bin/activate
-```
+
 
 ### Running the Full Pipeline:
 ```bash
