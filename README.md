@@ -14,19 +14,16 @@ This tool bridges the gap between unstructured CTI data and operational security
 The provided CTI report used for this demo:
 - **CSA_RUSSIAN_GRU_TARGET_LOGISTICS.pdf**
 - Focus: Russian GRU targeting Western logistics & tech entities.
+- [Official Report Reference (U.S. DoD & CISA)](https://www.cisa.gov/sites/default/files/2023-09/CSA_Russian-GRU-Targeting-Logistics-Sectors.pdf)
 
 ---
 
 ## 🔧 Project Structure
 
-```
 CyberIntelGPT/
-├── assets/
-│   ├── output_csv_example.PNG
-│   ├── output_json_example.PNG
-│   ├── output_stix_json_example.PNG
-│   ├── pipeline_diagram.png
-│   ├── terminal_success_example.PNG
+├── assets/                    # Assets for diagrams & output screenshots
+├── input/
+│   └── CSA_RUSSIAN_GRU_TARGET_LOGISTICS.pdf   # Input CTI PDF Report
 ├── output/                     # Output files (examples below)
 │   ├── enriched_iocs_with_virustotal.json      # Meaningful enriched output
 │   ├── enriched_iocs_virustotal_stix.json      # Meaningful enriched output
@@ -44,11 +41,10 @@ CyberIntelGPT/
 │   ├── stix_converter_virustotal.py
 │   └── stix_converter_xforce.py
 └── README.md
-```
 
 ---
 
-## 🚀 Pipeline Visualization
+##  Pipeline Visualization
 
 ![Pipeline Diagram](assets/pipeline_diagram.png)
 
@@ -78,7 +74,7 @@ CyberIntelGPT/
 ### 📑 JSON Enriched Output (VirusTotal):
 ![JSON Output](assets/output_json_example.PNG)
 
-### {} STIX JSON Enriched Output (VirusTotal):
+### 🗂️ STIX JSON Enriched Output (VirusTotal):
 ![STIX JSON Output](assets/output_stix_json_example.PNG)
 
 ### 🖥️ Terminal Execution Example:
