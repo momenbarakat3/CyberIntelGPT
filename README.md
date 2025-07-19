@@ -72,7 +72,7 @@ The provided CTI report used for this demo:
 
 ---
 
-## 🔥 Key Output Examples (Demo Screenshots)
+##  Key Output Examples (Demo Screenshots)
 
 ### 📄 CSV Output Example for SIEM:
 ![CSV Output](assets/output_csv_example.png)
