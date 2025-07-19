@@ -75,16 +75,16 @@ The provided CTI report used for this demo:
 ##  Key Output Examples (Demo Screenshots)
 
 ### 📄 CSV Output Example for SIEM:
-![CSV Output](assets/output_csv_example.png)
+![CSV Output](assets/output_csv_example.PNG)
 
 ### 📑 JSON Enriched Output (VirusTotal):
-![JSON Output](assets/output_json_example.png)
+![JSON Output](assets/output_json_example.PNG)
 
 ### 🗂️ STIX JSON Enriched Output (VirusTotal):
-![STIX JSON Output](assets/output_stix_json_example.png)
+![STIX JSON Output](assets/output_stix_json_example.PNG)
 
 ### 🖥️ Terminal Execution Example:
-![Terminal Success](assets/terminal_success_example.png)
+![Terminal Success](assets/terminal_success_example.PNG)
 
 ---
 
