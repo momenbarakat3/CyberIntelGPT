@@ -1,11 +1,41 @@
 
 # CyberIntelGPT: LLM-Driven IOC Extraction & Enrichment with SIEM & TIP-Ready Outputs
 
-## 📌 Overview
+## 📌 Project Overview
 
-**CyberIntelGPT** is a cybersecurity automation project designed to extract Indicators of Compromise (IOCs) from unstructured Cyber Threat Intelligence (CTI) reports using Large Language Models (LLMs), enrich them through public threat intelligence platforms, and output them in formats suitable for SIEM tools and Threat Intelligence Platforms (TIPs).
+## Project Overview
 
-This tool bridges the gap between unstructured CTI data and operational security tooling by transforming narrative reports into machine-ingestible intelligence for defensive operations.
+**CyberIntelGPT** is a cybersecurity automation project designed to streamline the extraction and enrichment of **Indicators of Compromise (IOCs)** from unstructured **Cyber Threat Intelligence (CTI)** reports. Leveraging **Large Language Models (LLMs)**, the project automates the identification of relevant IOCs and enriches them through public intelligence services such as **VirusTotal** and **IBM X-Force Exchange**.
+
+The extracted and enriched data is then formatted for seamless integration with industry-standard security tools, including **Security Information and Event Management (SIEM)** solutions and **Threat Intelligence Platforms (TIPs)**.
+
+---
+
+## Key Workflow
+
+This project reflects a typical industry-standard threat intelligence pipeline used within SOC (Security Operations Center) environments and CTI teams:
+
+1. **Extraction**  
+   Using LLM-based models to extract IOCs from raw CTI reports (PDFs, unstructured text).
+
+2. **Enrichment**  
+   Supplementing extracted IOCs with additional context from public intelligence services like VirusTotal and IBM X-Force Exchange.
+
+3. **Preparation for Ingestion**  
+   Preparing the output in two formats:
+   - **Flattened CSV**: Suitable for SIEM tools such as Splunk, QRadar, etc.
+   - **STIX JSON**: Suitable for sharing through TIPs such as MISP, Anomali, IBM X-Force Threat Intelligence Platform, or even CERTs and ISACs.
+
+---
+
+## Why This Workflow?
+
+This project demonstrates a realistic, industry-aligned workflow for operationalizing threat intelligence:
+
+- **LLM-Based Automation** reduces manual analysis time when processing large CTI reports.
+- **Public Enrichment Services** provide lightweight but valuable context without requiring costly enterprise licenses.
+- **Output Standardization** aligns the data with existing security tooling and workflows for correlation, detection, and threat hunting activities.
+
 
 ---
 
@@ -21,17 +51,17 @@ The provided CTI report used for this demo:
 ## 🔧 Project Structure
 
 CyberIntelGPT/
-├── assets/                    # Assets for diagrams & output screenshots
+├── assets/                           # Assets for diagrams & output screenshots
 ├── input/
 │   └── CSA_RUSSIAN_GRU_TARGET_LOGISTICS.pdf   # Input CTI PDF Report
-├── output/                     # Output files (examples below)
+├── output/                            # Output files (examples below)
 │   ├── enriched_iocs_with_virustotal.json      # Meaningful enriched output
 │   ├── enriched_iocs_virustotal_stix.json      # Meaningful enriched output
 │   ├── enriched_iocs_with_xforce.json          # Placeholder for demo (limited freemium enrichment)
 │   ├── enriched_iocs_xforce_stix.json          # Placeholder for demo (limited freemium enrichment)
 │   ├── flattened_iocs_for_splunk.csv           # CSV for SIEM ingestion
 │   └── iocs_output.json                        # Intermediate result
-├── src/                       # Core source files
+├── src/                                # Core source files
 │   ├── main.py
 │   ├── enrich_with_virustotal.py
 │   ├── enrich_with_xforce.py
