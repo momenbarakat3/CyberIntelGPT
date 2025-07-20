@@ -43,7 +43,7 @@ This project demonstrates a realistic, industry-aligned workflow for operational
 The provided CTI report used for this demo:
 - **CSA_RUSSIAN_GRU_TARGET_LOGISTICS.pdf**
 - Focus: Russian GRU targeting Western logistics & tech entities.
-- [Official Report Reference (U.S. DoD & CISA)](https://www.cisa.gov/sites/default/files/2023-09/CSA_Russian-GRU-Targeting-Logistics-Sectors.pdf)
+- [Official Report Reference (U.S. DoD & CISA)](https://www.cisa.gov/news-events/cybersecurity-advisories/aa25-141a)
 
 ---
 
