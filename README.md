@@ -98,6 +98,7 @@ The provided CTI report used for this demo:
 
 ### Prerequisites:
 - Python 3.x environment
+-  Create and activate a virtual environment:
 
 ### Activate your virtual environment:
 ```bash
@@ -111,6 +112,19 @@ source venv/bin/activate
 ### Running the Full Pipeline:
 ```bash
 python src/main.py
+```
+### Installing Requirements
+```bash
+pip install -r requirements.txt
+```
+
+### Contents of requirements.txt
+```ngnix
+PyPDF2
+stix2
+pyyaml
+requests
+openai
 ```
 
 ---
