@@ -4,7 +4,7 @@
 ## 📌 Project Overview
 
 
-**CyberIntelGPT** is a cybersecurity automation project designed to streamline the extraction and enrichment of **Indicators of Compromise (IOCs)** from unstructured **Cyber Threat Intelligence (CTI)** reports. Leveraging **Large Language Models (LLMs)**, the project automates the identification of relevant IOCs and enriches them through public intelligence services such as **VirusTotal** and **IBM X-Force Exchange**.
+**CyberIntelGPT** is a cybersecurity automation project designed to streamline the extraction and enrichment of **Indicators of Compromise (IOCs)** from unstructured **Cyber Threat Intelligence (CTI)** human-readable reports. Leveraging **Large Language Models (LLMs)**, the project automates the identification of relevant IOCs and enriches them through public intelligence services such as **VirusTotal** and **IBM X-Force Exchange**.
 
 The extracted and enriched data is then formatted for seamless integration with industry-standard security tools, including **Security Information and Event Management (SIEM)** solutions and **Threat Intelligence Platforms (TIPs)**.
 
