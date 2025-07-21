@@ -147,7 +147,7 @@ python src/stix_converter_xforce.py
 
 | File               | What to Change                 |
 |--------------------|--------------------------------|
-| `config/config.yaml` | API keys (keep secret, not committed) |
+| `config/config.yaml` | API keys (keep secret) |
 | `input/`           | Place your own CTI reports      |
 | `output/`          | Output paths as per your needs  |
 
